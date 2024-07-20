@@ -1,0 +1,49 @@
+html {}
+
+body {
+    background-color: rgb(1, 11, 34);
+    color: #fff;
+}
+
+.items {
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 25px;
+    z-index: 1;
+    position: relative;
+}
+
+.categories {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    scroll-behavior: smooth;
+    align-items: left;
+    display: flex;
+    scroll-snap-type: none;
+}
+
+.item-panel {
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgb(5, 76, 96);
+    color: white;
+
+}
+
+#food-type {
+    height: 30px;
+    margin-left: 50px;
+    z-index: 2;
+    margin-left: 0px;
+    margin-top: 0px;
+    position: relative;
+}
+
+.title {
+    padding: 10px;
+    text-align: start;
+    z-index: 1;
+
+}
