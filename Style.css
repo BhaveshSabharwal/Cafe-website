@@ -1,8 +1,8 @@
-html {}
-
 body {
     background-color: rgb(1, 11, 34);
     color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
 }
 
 .items {
@@ -12,6 +12,7 @@ body {
     border-radius: 25px;
     z-index: 1;
     position: relative;
+    padding-left: 12.5%;
 }
 
 .categories {
@@ -21,7 +22,18 @@ body {
     scroll-behavior: smooth;
     align-items: left;
     display: flex;
-    scroll-snap-type: none;
+    align-content: space-between;
+
+}
+
+h5 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.cal {
+    display: inline-flex;
+    flex-direction: row;
 }
 
 .item-panel {
@@ -29,21 +41,32 @@ body {
     border-radius: 15px;
     background-color: rgb(5, 76, 96);
     color: white;
+    height: auto;
+    width: 200px;
+    text-wrap: wrap;
+    font-weight: 400;
+}
 
+.price {
+    font-size: 25px;
+    width: 100%;
+    text-wrap: nowrap;
+    font-family: "Reem Kufi Ink", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #food-type {
-    height: 30px;
-    margin-left: 50px;
-    z-index: 2;
-    margin-left: 0px;
-    margin-top: 0px;
-    position: relative;
+    height: 25px;
+    margin-left: 65%;
+    margin-top: 0;
 }
 
 .title {
     padding: 10px;
     text-align: start;
     z-index: 1;
+    font-weight: 700;
+    font-size: 18px;
 
 }
