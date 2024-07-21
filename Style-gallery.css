@@ -112,10 +112,15 @@ footer {
     margin-bottom: 10px;
 }
 
+.footer-logo {
+    margin-bottom: 10px;
+    height: 300px;
+}
+
 .contact-details {
     margin-bottom: 10px;
     font-size: 1.2rem;
-    text-align: center;
+    text-align: centers;
 }
 
 .map {
