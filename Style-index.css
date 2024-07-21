@@ -1,0 +1,206 @@
+body {
+    background-color: rgb(92, 51, 23);
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+.items {
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 25px;
+    z-index: 1;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.categories {
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    white-space: nowrap;
+    /* Ensure items stay in a single line */
+    padding: 10px;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+h5 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 5px
+}
+
+.cal {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.item-panel {
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #8c6542;
+    color: white;
+    height: 370px;
+    width: 250px;
+    text-wrap: wrap;
+    font-weight: 400;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-shrink: 0;
+    /* Prevent shrinking */
+}
+
+.item-info {
+    margin-left: 20px;
+    max-width: 200px;
+}
+
+.price {
+    font-size: 25px;
+    width: 100%;
+    text-wrap: nowrap;
+    font-family: "Reem Kufi Ink", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#food-type {
+    height: 24px;
+    margin-left: 5px;
+    vertical-align: middle;
+    margin-bottom: 6px;
+}
+
+.title {
+    padding: 10px;
+    text-align: start;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+header,
+footer {
+    background-color: rgb(64, 43, 21);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+}
+
+.Footer-logo {
+    margin-bottom: 10px;
+}
+
+.contact-details {
+    margin-bottom: 10px;
+}
+
+.map {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+/* Header Styles */
+header {
+    background-color: rgb(64, 43, 21);
+    color: #fff;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 60px;
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.logo {
+    height: 170px;
+    margin-right: 15px;
+}
+
+
+/* Navigation Bar Styles */
+.nav-bar {
+    display: flex;
+    width: 100%;
+    background-color: #8b5e3c;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.nav-button {
+    flex: 1;
+    background-color: #8b5e3c;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0;
+    transition: background-color 0.3s;
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.nav-button:hover {
+    background-color: #a07b53;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(64, 43, 21);
+    color: white;
+}
+
+.footer-logo,
+.contact-details,
+.map {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 100px;
+    /* Adjust size of logo */
+}
+
+.contact-details {
+    font-size: 1.2rem;
+}
+
+.map iframe {
+    max-width: 100%;
+    height: 300px;
+    border: 0;
+}
