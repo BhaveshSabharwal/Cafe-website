@@ -69,6 +69,34 @@ header {
     background-color: #a07b53;
 }
 
+/* Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    grid-template-rows: repeat(7, 1fr);
+    /* 7 rows */
+    gap: 10px;
+    /* Gap between grid items */
+    max-width: 1200px;
+    /* Adjust as needed */
+    margin: 20px auto;
+    /* Centering gallery */
+    padding: 20px;
+    grid-auto-flow: dense;
+    /* Ensures the grid is filled efficiently */
+}
+
+.gallery-item {
+    margin: 20px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    border: 10px double #8c6542;
+}
+
 /* Footer Styles */
 footer {
     display: flex;
@@ -87,6 +115,7 @@ footer {
 .contact-details {
     margin-bottom: 10px;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .map {
@@ -102,91 +131,4 @@ footer {
     max-width: 100%;
     height: 300px;
     border: 0;
-}
-
-/* Body Styles */
-.items {
-    height: 150px;
-    width: 150px;
-    padding: 10px;
-    border-radius: 25px;
-    z-index: 1;
-    position: relative;
-    display: block;
-    margin: 0 auto;
-}
-
-.categories {
-    overflow-x: auto;
-    /* Enable horizontal scrolling */
-    white-space: nowrap;
-    /* Ensure items stay in a single line */
-    padding: 10px;
-    scroll-behavior: smooth;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-}
-
-.item-panel {
-    margin: 10px;
-    border-radius: 15px;
-    background-color: #8c6542;
-    color: white;
-    height: 380px;
-    width: 250px;
-    text-wrap: wrap;
-    font-weight: 400;
-    font-size: 16px;
-    display: inline-block;
-    vertical-align: top;
-    box-sizing: border-box;
-    overflow: hidden;
-    flex-shrink: 0;
-    /* Prevent shrinking */
-}
-
-.item-info {
-    margin-left: 20px;
-    max-width: 200px;
-}
-
-.price {
-    font-size: 25px;
-    width: 100%;
-    text-wrap: nowrap;
-    font-family: "Reem Kufi Ink", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-#food-type {
-    height: 24px;
-    margin-left: 5px;
-    vertical-align: middle;
-    margin-bottom: 6px;
-}
-
-.title {
-    padding: 10px;
-    text-align: start;
-    z-index: 1;
-    font-weight: 700;
-    font-size: 18px;
-}
-
-h5 {
-    margin: 0px;
-    padding: 0px;
-    font-size: 5px;
-}
-
-.cal {
-    display: inline-flex;
-    flex-direction: row;
-}
-
-.red {
-    font-weight: 600;
-    color: red;
 }
