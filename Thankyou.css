@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    background-color: rgb(92, 51, 23);
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header Styles */
+header {
+    background-color: rgb(64, 43, 21);
+    color: #fff;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 70px;
+    margin: 0;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background: -webkit-linear-gradient(right, #BF953F, #d4cc6b, #B38728);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo {
+    height: 170px;
+    margin-right: 15px;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    background-color: #8b5e3c;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.nav-link {
+    flex: 1;
+    background-color: #8b5e3c;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0;
+    transition: background-color 0.3s;
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background-color: #a07b53;
+}
+
+/* Thankyou Container Styles */
+.thankyou-container {
+    text-align: center;
+    margin: auto;
+}
+
+.thankyou-container h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+
+}
+
+.thankyou-container p {
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-family: "Reem Kufi Ink", sans-serif;
+}
+
+.home-button {
+    background-color: #8b5e3c;
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.home-button:hover {
+    background-color: #a07b53;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(64, 43, 21);
+    margin-top: 60px;
+    padding: 40px;
+}
+
+.footer-arrow {
+    height: 30px;
+    transform: rotate(90deg);
+    margin-right: 20px;
+    filter: invert();
+}
+
+.footer-nav {
+    margin-bottom: 40px;
+}
+
+.footer-nav:hover {
+    font-size: 35px;
+    margin-bottom: 24px;
+    padding-top: 11px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(64, 43, 21);
+    color: white;
+}
+
+.Footer-logo {
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+.contact-details {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: centers;
+}
+
+.map {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.footer-logo img {
+    max-width: 100px;
+}
+
+.map iframe {
+    max-width: 100%;
+    height: 300px;
+    border: 0;
+}

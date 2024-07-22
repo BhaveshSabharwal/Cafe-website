@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="Style-gallery.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,13 +16,13 @@
 <header>
     <div class="header-container">
         <div class="logo-container">
-            <img class="logo" src="./Images/logo2.png" alt="Cafe Logo">
+            <img class="logo" src=".\Images\logo2.png" alt="Cafe Logo">
             BrewNest Cafe
         </div>
         <nav class="nav-bar">
-            <button class="nav-button">Home</button>
-            <button class="nav-button">Gallery</button>
-            <button class="nav-button">Contact</button>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="gallery.html">Gallery</a>
+            <a class="nav-link" href="order.html">Order</a>
         </nav>
     </div>
 </header>
@@ -60,17 +62,23 @@
     </div>
 </body>
 <footer>
-    <div class="Footer-logo"><img class="footer-logo" src="./Images/logo2.png" alt="Cafe Logo"></div>
-    <div class="contact-details">
-        Call us - <br>(555) 123-4567<br><br><br>
-        Email us - <br>contact@brewnestcafe.com<br><br><br>
-        Find us - <br>123 Coffee Lane, Brewtown, CA 90210
+    <div class="footer-nav">
+        <a href="#head" class="back-to-top"><img class="footer-arrow"
+                src="https://cdn-icons-png.flaticon.com/512/482/482630.png" alt="back to top">Back to Top</a>
     </div>
-    <div class="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d337.7815753522644!2d33.74996626014352!3d21.88888189890221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDUzJzIwLjAiTiAzM8KwNDUnMDAuMCJF!5e1!3m2!1sen!2sin!4v1721575538738!5m2!1sen!2sin"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="main">
+        <div class="Footer-logo"><img class="footer-logo" src="./Images/logo2.png" alt="Cafe Logo"></div>
+        <div class="contact-details">
+            Call us - <br>(555) 123-4567<br><br><br>
+            Email us - <br>contact@brewnestcafe.com<br><br><br>
+            Find us - <br>123 Coffee Lane, Brewtown, CA 90210
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d337.7815753522644!2d33.74996626014352!3d21.88888189890221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDUzJzIwLjAiTiAzM8KwNDUnMDAuMCJF!5e1!3m2!1sen!2sin!4v1721575538738!5m2!1sen!2sin"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
 </footer>
 

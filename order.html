@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reem+Kufi+Ink&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+</head>
+<header>
+    <div class="header-container">
+        <div class="logo-container">
+            <img class="logo" src=".\Images\logo2.png" alt="Cafe Logo">
+            BrewNest Cafe
+        </div>
+        <nav class="nav-bar">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="gallery.html">Gallery</a>
+            <a class="nav-link" href="order.html">Order</a>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <h2 class="title">What can we serve you?</h2>
+    <form action="Thankyou.html" target="_self" method="post">
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required><br>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br>
+        </fieldset>
+        <br><br><br><br>
+        <fieldset>
+            <legend>Order Details</legend>
+
+            <!-- Coffee Items -->
+            <h3>Coffee</h3>
+            <label for="americano_qty">Americano ($3.50):</label>
+            <input type="number" id="americano_qty" name="americano_qty" min="0" value="0"><br>
+            <label for="cappuccino_qty">Cappuccino ($4.00):</label>
+            <input type="number" id="cappuccino_qty" name="cappuccino_qty" min="0" value="0"><br>
+            <label for="espresso_qty">Espresso ($3.00):</label>
+            <input type="number" id="espresso_qty" name="espresso_qty" min="0" value="0"><br>
+            <label for="latte_qty">Latte ($4.50):</label>
+            <input type="number" id="latte_qty" name="latte_qty" min="0" value="0"><br>
+            <label for="mocha_qty">Mocha ($5.00):</label>
+            <input type="number" id="mocha_qty" name="mocha_qty" min="0" value="0"><br>
+
+            <!-- Pastries Items -->
+            <h3>Pastries</h3>
+            <label for="cinnamon_roll_qty">Cinnamon Roll ($2.50):</label>
+            <input type="number" id="cinnamon_roll_qty" name="cinnamon_roll_qty" min="0" value="0"><br>
+            <label for="croissant_qty">Croissant ($2.50):</label>
+            <input type="number" id="croissant_qty" name="croissant_qty" min="0" value="0"><br>
+            <label for="danish_qty">Danish Pastry ($3.00):</label>
+            <input type="number" id="danish_qty" name="danish_qty" min="0" value="0"><br>
+            <label for="muffin_qty">Muffin ($2.75):</label>
+            <input type="number" id="muffin_qty" name="muffin_qty" min="0" value="0"><br>
+            <label for="scone_qty">Scone ($2.50):</label>
+            <input type="number" id="scone_qty" name="scone_qty" min="0" value="0"><br>
+
+            <!-- Sandwiches Items -->
+            <h3>Sandwiches</h3>
+            <label for="caprese_qty">Caprese ($5.75):</label>
+            <input type="number" id="caprese_qty" name="caprese_qty" min="0" value="0"><br>
+            <label for="veggie_delight_qty">Veggie Delight ($5.50):</label>
+            <input type="number" id="veggie_delight_qty" name="veggie_delight_qty" min="0" value="0"><br>
+            <label for="grilled_cheese_qty">Grilled Cheese ($5.00):</label>
+            <input type="number" id="grilled_cheese_qty" name="grilled_cheese_qty" min="0" value="0"><br>
+            <label for="chicken_salad_qty">Chicken Salad ($6.50):</label>
+            <input type="number" id="chicken_salad_qty" name="chicken_salad_qty" min="0" value="0"><br>
+            <label for="turkey_club_qty">Turkey Club ($6.75):</label>
+            <input type="number" id="turkey_club_qty" name="turkey_club_qty" min="0" value="0"><br>
+
+            <!-- Salads Items -->
+            <h3>Salads</h3>
+            <label for="caesar_salad_qty">Caesar Salad ($7.00):</label>
+            <input type="number" id="caesar_salad_qty" name="caesar_salad_qty" min="0" value="0"><br>
+            <label for="garden_salad_qty">Garden Salad ($6.50):</label>
+            <input type="number" id="garden_salad_qty" name="garden_salad_qty" min="0" value="0"><br>
+            <label for="greek_salad_qty">Greek Salad ($7.50):</label>
+            <input type="number" id="greek_salad_qty" name="greek_salad_qty" min="0" value="0"><br>
+            <label for="chicken_caesar_salad_qty">Chicken Caesar Salad ($8.00):</label>
+            <input type="number" id="chicken_caesar_salad_qty" name="chicken_caesar_salad_qty" min="0" value="0"><br>
+            <label for="cobb_salad_qty">Cobb Salad ($8.50):</label>
+            <input type="number" id="cobb_salad_qty" name="cobb_salad_qty" min="0" value="0"><br>
+
+            <!-- Beverages Items -->
+            <h3>Beverages</h3>
+            <label for="hot_chocolate_qty">Hot Chocolate ($3.50):</label>
+            <input type="number" id="hot_chocolate_qty" name="hot_chocolate_qty" min="0" value="0"><br>
+            <label for="iced_tea_qty">Iced Tea ($2.50):</label>
+            <input type="number" id="iced_tea_qty" name="iced_tea_qty" min="0" value="0"><br>
+            <label for="lemonade_qty">Lemonade ($3.00):</label>
+            <input type="number" id="lemonade_qty" name="lemonade_qty" min="0" value="0"><br>
+            <label for="smoothie_qty">Smoothie ($4.50):</label>
+            <input type="number" id="smoothie_qty" name="smoothie_qty" min="0" value="0"><br>
+            <label for="virgin_mojito_qty">Virgin Mojito ($3.50):</label>
+            <input type="number" id="virgin_mojito_qty" name="virgin_mojito_qty" min="0" value="0"><br>
+        </fieldset>
+
+        <button class="submit-button" type="submit">Submit Order</button>
+    </form>
+</body>
+<footer>
+    <div class="footer-nav">
+        <a href="#head" class="back-to-top"><img class="footer-arrow"
+                src="https://cdn-icons-png.flaticon.com/512/482/482630.png" alt="back to top">Back to Top</a>
+    </div>
+    <div class="main">
+        <div class="Footer-logo"><img class="footer-logo" src="./Images/logo2.png" alt="Cafe Logo"></div>
+        <div class="contact-details">
+            Call us - <br>(555) 123-4567<br><br><br>
+            Email us - <br>contact@brewnestcafe.com<br><br><br>
+            Find us - <br>123 Coffee Lane, Brewtown, CA 90210
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d337.7815753522644!2d33.74996626014352!3d21.88888189890221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDUzJzIwLjAiTiAzM8KwNDUnMDAuMCJF!5e1!3m2!1sen!2sin!4v1721575538738!5m2!1sen!2sin"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</footer>
+
+</html>

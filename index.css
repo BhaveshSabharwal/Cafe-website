@@ -10,6 +10,11 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* Header Styles */
 header {
     background-color: rgb(64, 43, 21);
@@ -27,11 +32,14 @@ header {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    font-size: 60px;
+    font-size: 70px;
     margin: 0;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 300;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-weight: 400;
     font-style: normal;
+    background: -webkit-linear-gradient(right, #BF953F, #d4cc6b, #B38728);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .logo {
@@ -49,13 +57,14 @@ header {
     margin-top: 10px;
 }
 
-.nav-button {
+.nav-link {
     flex: 1;
     background-color: #8b5e3c;
     border: none;
     color: #fff;
     padding: 10px;
-    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
     border-radius: 5px;
     margin: 0;
     transition: background-color 0.3s;
@@ -65,17 +74,42 @@ header {
     font-weight: 500;
 }
 
-.nav-button:hover {
+.nav-link:hover {
     background-color: #a07b53;
 }
 
 /* Footer Styles */
 footer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(64, 43, 21);
+    margin-top: 60px;
+    padding: 40px;
+}
+
+.footer-arrow {
+    height: 30px;
+    transform: rotate(90deg);
+    margin-right: 20px;
+    filter: invert();
+}
+
+.footer-nav {
+    margin-bottom: 40px;
+}
+
+.footer-nav:hover {
+    font-size: 35px;
+    margin-bottom: 24px;
+    padding-top: 11px;
+}
+
+.main {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
     background-color: rgb(64, 43, 21);
     color: white;
 }
@@ -84,9 +118,15 @@ footer {
     margin-bottom: 10px;
 }
 
+.footer-logo {
+    margin-bottom: 10px;
+    height: 300px;
+}
+
 .contact-details {
     margin-bottom: 10px;
     font-size: 1.2rem;
+    text-align: centers;
 }
 
 .map {
@@ -126,6 +166,11 @@ footer {
     display: flex;
     flex-wrap: nowrap;
     align-items: flex-start;
+}
+
+.category-title {
+    margin: 20px;
+    font-weight: 600;
 }
 
 .item-panel {
